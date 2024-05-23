@@ -44,8 +44,8 @@ def transform_text(text):
 
 #remove SMS_Spam_Classifier name from path while deploying locally 
 
-tfidf=pickle.load(open('SMS_Spam_Classifier/vectorizer.pkl','rb'))
-model=pickle.load(open('SMS_Spam_Classifier/mnb_spam_detector.pkl','rb'))
+tfidf=pickle.load(open('./vectorizer.pkl','rb'))
+model=pickle.load(open('./mnb_spam_detector.pkl','rb'))
 
 st.title("SMS Spam classifier")
 
